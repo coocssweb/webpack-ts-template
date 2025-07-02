@@ -30,6 +30,12 @@ const pages = [
     path: resolve("src/pages", "agreement5/index.ts"),
     filename: "agreement5.html",
     template: resolve("src/pages", "agreement5/index-render.js"),
+  },
+   {
+    name: "agreement6",
+    path: resolve("src/pages", "agreement6/index.ts"),
+    filename: "agreement6.html",
+    template: resolve("src/pages", "agreement6/index-render.js"),
   }
 
 ]
