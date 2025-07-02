@@ -24,6 +24,12 @@ const pages = [
     path: resolve("src/pages", "agreement4/index.ts"),
     filename: "agreement4.html",
     template: resolve("src/pages", "agreement4/index-render.js"),
+  },
+   {
+    name: "agreement5",
+    path: resolve("src/pages", "agreement5/index.ts"),
+    filename: "agreement5.html",
+    template: resolve("src/pages", "agreement5/index-render.js"),
   }
 
 ]
