@@ -1,5 +1,4 @@
 import '@less/base/common.less';
-import "../assets/iconFont/index.less"
 import App from './app';
 import { ajax, jsonp } from './modules/index';
 
@@ -18,7 +17,7 @@ export default class Instance {
             ... options
         };
         const { data, watchs, ...resets } = optionsExtend;
-        
+
         return new (App.extends(resets))(data, watchs);
     }
 }

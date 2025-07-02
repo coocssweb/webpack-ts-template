@@ -1,13 +1,25 @@
 
 const { resolve } = require('./utils')
 const pages = [
-
   {
     name: "agreement",
     path: resolve("src/pages", "agreement/index.ts"),
     filename: "agreement.html",
     template: resolve("src/pages", "agreement/index-render.js"),
+  },
+   {
+    name: "agreement2",
+    path: resolve("src/pages", "agreement2/index.ts"),
+    filename: "agreement2.html",
+    template: resolve("src/pages", "agreement2/index-render.js"),
+  },
+   {
+    name: "agreement3",
+    path: resolve("src/pages", "agreement3/index.ts"),
+    filename: "agreement3.html",
+    template: resolve("src/pages", "agreement3/index-render.js"),
   }
+
 ]
 
 module.exports = pages

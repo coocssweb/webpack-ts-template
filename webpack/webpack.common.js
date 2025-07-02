@@ -51,9 +51,8 @@ module.exports = function webpackCommonFunc(env) {
             }
         },
         moduleIds: 'deterministic',
-        runtimeChunk: {
-            name: 'manifest',
-        }
+        runtimeChunk: 'single',
+        chunkIds: 'deterministic',
     },
 
     module: {
@@ -129,7 +128,7 @@ module.exports = function webpackCommonFunc(env) {
           new HtmlWebpackPlugin({
             template: page.template,
             filename: page.filename,
-            chunks: ['manifest', 'vendor', 'common', page.name],
+            chunks: ['runtime', 'vendor', 'common', page.name],
               hash: false,
               inject: 'body',
               xhtml: false,

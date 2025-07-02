@@ -78,7 +78,5 @@
     "babel",
     "typescript",
     "less"
-  ],
-  "dependencies": {
-  }
+  ]
 }

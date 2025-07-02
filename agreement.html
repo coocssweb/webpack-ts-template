@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>Agreement</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script>
+        ;(function (window, documentElement) {
+            function refreshRem () {
+                var width = documentElement.getBoundingClientRect().width || 320;
+                var fontSize = width / 375 * 100;
+                fontSize = fontSize > 150 ? 150 : fontSize;
+                documentElement.style.fontSize = fontSize + 'px';
+            };
+            var timeId;
+            window.addEventListener('resize', function () {
+                clearTimeout(timeId);
+                timeId = setTimeout(refreshRem, 100)
+            }, false);
+            window.addEventListener("pageshow", function (e) {
+                if (e.persisted) {
+                    clearTimeout(timeId);
+                    timeId = setTimeout(refreshRem, 100)
+                }
+            }, false);
+            refreshRem();
+        })(window, document.documentElement);
+    </script>
+<link href="/css/common.766d45018161276bedf7.css" rel="stylesheet"></head>
+<body>
+<div class="globalHeader">
+    <div class="globalWrapper">
+        <div class="globalHeader-placeholder">
+            <img class="globalHeader-logo" src="">
+        </div>
+    </div>
+</div>
+
+
+<div id="app">
+    <div class="agreement" id="j-content">
+
+</div>
+
+</div>
+<footer class="page-footer">
+    <div class="page-footer-inner">
+
+    </div>
+</footer>
+
+
+
+
+
+<script defer="defer" src="/js/runtime.1cd23977.js"></script><script defer="defer" src="/js/common.bdaac311.js"></script><script defer="defer" src="/js/agreement.b70139b1.js"></script></body>
+</html>
