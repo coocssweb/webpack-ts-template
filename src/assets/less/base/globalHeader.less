@@ -1,0 +1,115 @@
+.globalHeader{
+    border-bottom: 1PX solid #eeefef;
+    padding: 10PX 0px;
+
+    &-logo{
+        height: 80px;
+        width: 80px;
+        display: none;
+    }
+
+    &-placeholder{
+        height: 80px;
+        width: 80px;
+        display: block;
+        background-color: #efefef;
+    }
+
+    @media screen and (max-width: 768px){
+        border-bottom: 0;
+        padding-bottom: 20px;
+        padding-top: 180px;
+        padding-bottom: 64px;
+        &-logo{
+            width: 172px;
+            height: 172px;
+            border-radius: 12%;
+            margin: 0 auto ;
+        }
+
+        &-placeholder{
+            width: auto;
+            height: 172px;
+            display: block;
+            background-color: #ffffff;
+        }
+    }
+}
+
+.page-header-link{
+    display: none;
+}
+.resetHeader-content{
+    display: none; 
+}
+
+.theme-C610{
+    .globalHeader{
+        width: auto;
+        border-bottom: 0PX ;
+        padding-top: 30PX;
+        padding-bottom: 50PX;
+
+    }
+   .page-header-link {
+        display: none;
+        font-size: 18PX;
+        line-height: 5em;
+        color: #E2004C; 
+        float: right;
+
+        @media screen and (max-width: 768px){
+            font-size: 16PX;
+            line-height: 3em;
+        }
+
+    } 
+
+    .globalHeader-logo{
+        display: inline-block !important;
+        width: 90PX;
+        height: auto; 
+        line-height: 2PX;
+    }
+
+    .globalHeader-placeholder{
+        width: 100%;
+        height: auto;
+        background-color: #ffffff;
+    }
+    .resetHeader-content{
+        display: inline-block;
+        font-size: 24px;
+        color:#666666;
+        margin: 64px 0;
+    }
+}
+
+
+.globalLocation{
+    &-wrapper{
+        max-width: @globalWidth;
+        margin: 0px auto;
+        padding: 20PX 0;
+    }
+    &-item{
+        font-size: @fontSizeM;
+        color: @colorGrayDark;
+        &--link{
+            color: @colorGrayDarker;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.appCode-AiDot{
+    .globalHeader{
+        &-placeholder{
+            width: 100%;
+            height: auto;
+            background-color: transparent;
+        }
+    }
+}

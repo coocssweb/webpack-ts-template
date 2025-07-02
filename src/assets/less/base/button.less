@@ -1,0 +1,197 @@
+.globalBtn{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    background-image: none;
+    border: none;
+    border-radius: 4PX;
+    outline: 0;
+    transition: all 300ms;
+    padding: 10PX 25PX;
+    text-align: center;
+    border-width: 1PX;
+    border-style: solid;
+    user-select: none;
+    box-sizing: border-box;
+
+    &:hover{
+        opacity: .8;
+    }
+    
+    &-primary{
+        color: #ffffff;
+        &.disable {
+            opacity: .3;
+            &:hover{
+                opacity: 0.3;
+            }
+        }
+    }
+    &-transparent {
+        color: #ffffff;
+        &:hover{
+            // text-decoration: underline;
+        }
+        &.disable {
+            opacity: .3;
+            &:hover{
+                opacity: 0.3;
+            }
+        }
+    }
+    &--small{
+        font-size: @fontSizeL;
+        padding: 8PX 0PX;
+    }
+    &--large{
+        font-size: @fontSizeL;
+        padding: 13PX;
+        width: 100%;
+    }
+}
+
+#form-submit {
+    font-size: 24px;
+    line-height: 1.55556em;
+    border-radius: 38px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 1;
+    text-align: center;
+    padding: 14px 30px;
+    min-width: 165px;
+    display: inline-block;
+
+    @media screen and (max-width: 768px){
+        font-size: 34px;
+        line-height: 2.1em;
+        height: 50PX;;
+        border-radius: 1.19rem;
+    }
+}
+
+
+#form-submit:hover, #form-submit:active, #form-submit:focus {
+      background-color: #fff; 
+
+}
+
+.theme-linkind{
+    .globalBtn-primary, .globalBtn-transparent{
+        background-color: @themeLinkind;
+    }
+    #form-submit:hover, #form-submit:active, #form-submit:focus{
+        color: @themeLinkind;
+    }
+}
+
+.theme-darkBlue{
+    .globalBtn-primary, .globalBtn-transparent{
+        background-color: @themeDarkBlue;
+    }
+    #form-submit:hover, #form-submit:active, #form-submit:focus{
+        color: @themeDarkBlue;
+    }
+}
+
+.appCode-Ynoa{
+    .globalBtn-primary, .globalBtn-transparent{
+        background-color: @themeDarkBlue;
+    }
+    #form-submit:hover, #form-submit:active, #form-submit:focus{
+        color: @themeDarkBlue ;
+    }
+}
+
+.theme-c150{
+    .globalBtn-primary, .globalBtn-transparent{
+        background-color: @themeC150;
+    }
+    #form-submit:hover, #form-submit:active, #form-submit:focus{
+        color: @themeC150;
+    }
+}
+
+.theme-freshGreen{
+    .globalBtn-primary, .globalBtn-transparent{
+        background-color:@themeFreshGreen;
+    }
+    #form-submit:hover, #form-submit:active, #form-submit:focus{
+        color: @themeFreshGreen;
+    }
+}
+
+.theme-consciot{
+    .globalBtn-primary, .globalBtn-transparent{
+        background-color: @themeConsciot;
+    }
+    #form-submit:hover, #form-submit:active, #form-submit:focus{
+        color: @themeConsciot;
+    }
+}
+
+.theme-grayYellow{
+    .globalBtn-primary, .globalBtn-transparent{
+        background-color: @themeGrayYellow;
+        &:hover{
+            color: #ffffff;
+        }
+    }
+    #form-submit:hover, #form-submit:active, #form-submit:focus{
+        color: @themeGrayYellow;
+    }
+}
+
+.theme-C066{
+    .globalBtn-primary, .globalBtn-transparent{
+        background-color:  @themeC066;
+        &:hover{
+            color: #ffffff;
+        }
+    }
+    #form-submit:hover, #form-submit:active, #form-submit:focus{
+        color: @themeC066;
+    }
+}
+
+.theme-C610{
+    .globalBtn-primary, .globalBtn-transparent{
+        background-color:  @themeC610;
+        &:hover{
+            color: #ffffff;
+        }
+    }
+    #form-submit:hover, #form-submit:active, #form-submit:focus{
+        color: @themeC610;
+    }
+
+    #form-submit{
+        margin: 0 auto;
+        width: 200PX;
+        height: 43PX;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 64PX;
+        font-weight: 500;
+        font-size: 12PX;
+    }
+}
+
+.appCode-AiDot{
+    .globalBtn-primary, .globalBtn-transparent{
+        background-color:  @themeAiDot;
+    }
+    
+    #form-submit{
+     border-radius: 8PX;
+     font-size: 16PX;
+    }
+    #form-submit:hover, #form-submit:active, #form-submit:focus{
+        color: #ffffff ;
+        background-color: #EB8A3C; 
+    }
+}

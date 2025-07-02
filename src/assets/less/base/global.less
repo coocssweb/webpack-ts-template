@@ -1,0 +1,174 @@
+.global{
+    &Wrapper{
+        max-width: @globalWidth;
+        margin: 0px auto;
+        padding: 0px 16PX;
+    }
+
+    &Link{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    &Input{
+        &-wrapper{
+            position: relative;
+
+        }
+
+        &-icon{
+            position: absolute;
+            top: 10PX;
+            height: 30PX;
+            width: 30PX;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            &--prefix{
+                left: 10PX;
+            }
+            &--addon{
+                right: 10PX;
+            }
+
+            &--email{
+                background-image: url(../../images/global/icon-email.png);
+            }
+            &--password{
+                background-image: url(../../images/global/icon-password.png);
+            }
+
+            &--eyeOpen {
+                background-image: url(../../images/global/icon-eye-open.png);
+            }
+
+            &--eyeClose {
+                background-image: url(../../images/global/icon-eye-close.png);
+            }
+        }
+
+        border-radius: 4PX;
+        display: block;
+        width: 100%;
+        height: 50PX;
+        line-height: 38PX;
+        padding: 10PX 45PX;
+        border: 1PX solid #efefef;
+        box-sizing: border-box;
+        outline: 0;
+        appearance: none;
+        background-color: transparent;
+        font-size: 14PX;
+    }
+}
+
+
+.theme-linkind{
+    .globalInput:focus{
+        border-color: @themeLinkind;
+    }
+    .globalLink{
+        color:@themeLinkind;
+    }
+}
+
+.theme-darkBlue{
+    .globalInput:focus{
+        border-color: @themeDarkBlue;
+    }
+    .globalLink{
+        color: @themeDarkBlue;
+    }
+}
+
+.appCode-Ynoa{
+    .globalInput:focus{
+        border-color: @themeDarkBlue !important;
+    }
+    .globalLink{
+        color: @themeDarkBlue !important;
+    }
+}
+
+.theme-c150{
+    .globalInput:focus{
+        border-color: @themeC150;
+    }
+    .globalLink{
+        color: @themeC150;
+    }
+}
+
+.theme-freshGreen{
+    .globalInput:focus{
+        border-color: @themeFreshGreen;
+    }
+    .globalLink{
+        color:@themeFreshGreen;
+    }
+}
+
+.theme-consciot{
+    .globalInput:focus{
+        border-color: @themeConsciot;
+    }
+    .globalLink{
+        color:   @themeConsciot;
+    }
+}
+
+.theme-grayYellow{
+    .globalInput:focus{
+        border-color: @themeGrayYellow;
+    }
+    .globalLink{
+        color:  @themeGrayYellow;
+    }
+}
+
+.theme-C066{
+    .globalInput:focus{
+        border-color:  @themeC066;
+    }
+    .globalLink{
+        color: @themeC066;
+    }
+}
+
+
+.theme-C610{
+    .globalInput:focus{
+        border-color:  @themeC610;
+    }
+    .globalLink{
+        color: @themeC610;
+    }
+    .globalWrapper {
+        max-width: @globalWidthByInnr;
+        height: auto;
+    }
+}
+
+.appCode-AiDot{
+    .globalInput-icon{
+            top: 15PX;
+            height: 20PX;
+            width: 20PX;   
+            &--prefix{
+                left: 16PX;
+            }   
+            &--addon{
+                right: 16PX;
+            }
+        }
+    .globalInput{
+        border-radius: 8PX;
+    }
+    .globalInput:focus{
+
+        border-color: @themeAiDot !important;
+    }
+    .globalLink{
+        color: @themeAiDot !important;
+    }
+}
