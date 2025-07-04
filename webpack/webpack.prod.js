@@ -15,7 +15,7 @@ module.exports = merge(commonConfig, {
   mode: 'production',
   devtool: false,
   output: {
-    path: resolve('./')
+    path: resolve('./dist')
   },
   plugins: [
     // compress example:

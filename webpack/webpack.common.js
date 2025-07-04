@@ -3,11 +3,8 @@ const { resolve } = require('./utils');
 const pages = require('./webpack-pages')
 const configs = require('./webpack-config');
 
-// extract css from js to another files
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-// html support
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { options } = require('less');
 
 
 // helpers:
@@ -25,7 +22,7 @@ module.exports = function webpackCommonFunc(env) {
   const webpackConfig = {
     entry: entries,
     output: {
-      path: resolve('./'),
+      path: resolve('dist'),
       publicPath: config.staticPath,
       filename: `js/${isDev ? '[name]' : '[name].[chunkhash:8]'}.js`,
       chunkFilename: `js/${isDev ? '[name]' : '[name].[chunkhash:8]'}.js`
